@@ -26,7 +26,6 @@ public class Tamagotchi {
         feedButton = new JButton("Feed");
         playButton = new JButton("Play");
         sleepButton = new JButton("Sleep");
-        public void setIcon(Icon icon)
 
         // Add action listeners to the buttons
         feedButton.addActionListener(e -> feed());
