@@ -97,7 +97,7 @@ public class Tamagotchi {
 
     public static void main(String[] args) {
         SwingUtilities.invokeLater(() -> {
-        // Old Code | Tamagotchi tamagotchi = new Tamagotchi("Tommy");
+        Tamagotchi tamagotchi = new Tamagotchi("Tommy");
         });
     }
 }
