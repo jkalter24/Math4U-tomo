@@ -26,10 +26,6 @@ public class Tamagotchi {
         feedButton = new JButton("Feed");
         playButton = new JButton("Play");
         sleepButton = new JButton("Sleep");
-        // Sets the icon to the image
-        ImageIcon img = new ImageIcon("/img/icon.png");
-        // Set the Icon image
-        myFrame.setIconImage(img.getImage());
 
         // Add action listeners to the buttons
         feedButton.addActionListener(e -> feed());
@@ -97,7 +93,8 @@ public class Tamagotchi {
 
     public static void main(String[] args) {
         SwingUtilities.invokeLater(() -> {
-        Tamagotchi tamagotchi = new Tamagotchi("Tommy");
+            String name = JOptionPane.showInputDialog("Enter the Tamagotchi name:");
+            Tamagotchi tamagotchi = new Tamagotchi(name);
         });
     }
 }
