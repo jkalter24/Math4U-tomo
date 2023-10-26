@@ -93,7 +93,7 @@ public class Tamagotchi {
 
     public static void main(String[] args) {
         SwingUtilities.invokeLater(() -> {
-            String name = JOptionPane.showInputDialog("Enter the Tamagotchi name:");
+            String name = JOptionPane.showInputDialog("Enter your Tamagotchi's name:");
             Tamagotchi tamagotchi = new Tamagotchi(name);
         });
     }
